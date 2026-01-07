@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+  <title>Genshin Impact Restaurant</title>
+</head>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Review Order</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="genshin-bg"></body>
+
+<h1 class="page-title genshin-gradient"></h1>
+<p class="order-number fade-in" id="orderNumber"></p>
+
+<div class="review-container" id="reviewList">
+
+</div>
+
+<div class="review-footer">
+  <span id="reviewTotal">Total: ₱0</span>
+  <div class="review-buttons">
+  <button class="game-btn" onclick="goToDine()">Proceed</button>
+  <button class="game-btn secondary-btn" onclick="goBackToMenu()">Add More Items</button>
+</div>
+
+<script src="script.js"></script>
+<script>
+loadReview();
+</script>
+
+<script>
+function goBackToMenu(){
+  location.href = "menu.html";
+}
+</script>
+
+<script>
+function goToDine(){
+  location.href = "dine.html";
+}
+</script>
+
+<script>
+const orderNum = Math.floor(Math.random() * 90000) + 10000;
+document.getElementById("orderNumber").innerText = "Order No. #" + orderNum;
+</script>
+
+</body>
+</html>

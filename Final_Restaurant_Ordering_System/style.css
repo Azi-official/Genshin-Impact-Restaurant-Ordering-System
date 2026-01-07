@@ -1,0 +1,456 @@
+/* WELCOME PAGE */
+.welcome-bg{
+  background:url("images/gensinbg.gif ") center/cover no-repeat;
+  height:100vh;
+}
+
+.welcome-container{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  color:rgb(255, 255, 255);
+  text-shadow:0 2px 6px rgba(0,0,0,0.8);
+  text-align:center;
+}
+
+.welcome-container h1{
+  font-size:42px;
+  letter-spacing:3px;
+}
+
+.welcome-container p{
+  font-size:18px;
+  margin-bottom:30px;
+}
+
+.game-btn{
+  padding:16px 50px;
+  font-size:18px;
+  letter-spacing:2px;
+  border:none;
+  border-radius:30px;
+  background:linear-gradient(135deg,#d4af37,#f5e6a8);
+  color:#2b1d0e;
+  cursor:pointer;
+}
+
+
+*{
+  box-sizing:border-box;
+  font-family:'Cinzel', serif;
+}
+
+body{
+  margin:0;
+  background:#f5f5f5;
+}
+
+/* KIOSK LAYOUT */
+.kiosk-container{
+  display:flex;
+  height:100vh;
+}
+
+/* LEFT PANEL */
+.category-panel{
+  width:220px;
+  background:#1f2f46;
+  padding:20px;
+  color:white;
+}
+
+.category-panel h2{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.category-panel button{
+  width:100%;
+  padding:12px;
+  margin-bottom:10px;
+  border:none;
+  background:#3b82c4;
+  color:white;
+  font-size:16px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.category-panel button:hover{
+  background:#60a5fa;
+}
+
+/* RIGHT MENU */
+.menu-area{
+  flex:1;
+  padding:20px;
+  overflow-y:auto;
+  background:white;
+}
+
+.menu-title{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.menu-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,220px);
+  justify-content:center;
+  gap:20px;
+}
+
+/* FOOD CARD */
+.menu-card{
+  border:1px solid #ddd;
+  border-radius:12px;
+  text-align:center;
+  padding:10px;
+}
+
+.menu-card img{
+  width:100%;
+  height:140px;
+  object-fit:contain;
+}
+
+.menu-card h4{
+  font-size:14px;
+  margin:8px 0;
+}
+
+.price{
+  color:#444;
+  margin-bottom:8px;
+}
+
+.menu-card button{
+  padding:8px 14px;
+  border:none;
+  border-radius:6px;
+  background:#eab308;
+  cursor:pointer;
+}
+
+/* CART BAR */
+.cart-bar{
+  position:fixed;
+  bottom:0;
+  right:0;
+  width:320px;
+  background:#1f2f46;
+  color:white;
+  padding:15px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-size:16px;
+}
+
+.cart-bar button{
+  padding:8px 16px;
+  border:none;
+  border-radius:6px;
+  background:#eab308;
+  cursor:pointer;
+  font-family:'Cinzel', serif;
+}
+
+/* REVIEW PAGE */
+.review-container{
+  max-width:700px;
+  margin:0 auto;
+}
+
+.review-item{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border:1px solid #ddd;
+  border-radius:12px;
+  padding:12px;
+  margin-bottom:10px;
+}
+
+.review-item span{
+  width:180px;
+}
+
+.qty-controls button{
+  padding:4px 10px;
+  margin:0 6px;
+  border:none;
+  border-radius:6px;
+  background:#3b82c4;
+  color:white;
+  cursor:pointer;
+}
+
+.review-footer{
+  max-width:700px;
+  margin:20px auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+/* PAYMENT PAGE FIX */
+.payment-bg{
+  background:url("images/gensinbg.gif") center/cover no-repeat;
+  min-height:100vh;
+}
+
+.payment-page{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  backdrop-filter:blur(2px);
+}
+
+.payment-title{
+  color:white;
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.payment-container{
+  display:flex;
+  justify-content:center;
+  gap:40px;
+}
+
+.payment-box{
+  width:200px;
+  height:220px;
+  background:white;
+  border-radius:16px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  cursor:pointer;
+  transition:transform .2s;
+}
+
+.payment-box:hover{
+  transform:scale(1.05);
+}
+
+.payment-box img{
+  width:90px;
+  margin-bottom:12px;
+}
+
+.payment-box p{
+  font-size:16px;
+  color:#1f2f46;
+}
+
+/* SHARED GENSHIN BG */
+.genshin-bg{
+  background:url("images/gensinbg.gif") center/cover no-repeat;
+  min-height:100vh;
+}
+
+/* CENTER PAGE */
+.center-page{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.page-title{
+  color:white;
+  text-shadow:0 2px 6px rgba(0,0,0,0.8);
+  margin-bottom:40px;
+}
+
+.option-container{
+  display:flex;
+  gap:50px;
+}
+
+.option-box{
+  width:220px;
+  height:240px;
+  background:white;
+  border-radius:18px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  cursor:pointer;
+  transition:.2s;
+}
+
+.option-box:hover{
+  transform:scale(1.05);
+}
+
+.option-box img{
+  width:100px;
+  margin-bottom:15px;
+}
+
+.option-box p{
+  font-size:18px;
+  color:#1f2f46;
+}
+/* REVIEW PAGE BACKGROUND */
+.review-container,
+.review-footer{
+  background:rgba(255,255,255,0.92);
+  border-radius:16px;
+  padding:20px;
+}
+
+/* spacing between review panel and buttons */
+.review-footer{
+  margin-top:20px;
+}
+
+/* nicer title for game feel */
+.review-page-title{
+  color:white;
+  text-shadow:0 2px 6px rgba(0,0,0,0.8);
+  text-align:center;
+  margin-bottom:30px;
+}
+
+/* FADE-IN ANIMATION */
+.fade-in{
+  animation:fadeIn .6s ease-out forwards;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity:0;
+    transform:translateY(10px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* CENTER TITLE */
+.page-title{
+  color:white;
+  text-shadow:0 2px 6px rgba(0,0,0,0.8);
+  text-align:center;
+  margin-bottom:10px;
+}
+
+/* ORDER NUMBER */
+.order-number{
+  color:#e5e7eb;
+  text-shadow:0 2px 6px rgba(0,0,0,0.8);
+  text-align:center;
+  margin-bottom:25px;
+  font-size:14px;
+  letter-spacing:1px;
+}
+
+/* GAME-STYLE BUTTON (REUSE) */
+.game-btn{
+  padding:16px 50px;
+  font-size:16px;
+  letter-spacing:2px;
+  border:none;
+  border-radius:30px;
+  background:linear-gradient(135deg,#d4af37,#f5e6a8);
+  color:#2b1d0e;
+  cursor:pointer;
+}
+
+/* TEXT VISIBILITY BOOST */
+.page-title,
+.payment-title,
+.review-page-title{
+  color:#ffffff;
+  text-shadow:0 2px 6px rgba(0,0,0,0.8);
+}
+
+.order-number,
+p,
+h2{
+  color:#f0f4ff;
+  text-shadow:0 1px 4px rgba(0,0,0,0.6);
+}
+
+button,
+.game-btn{
+  text-shadow:0 1px 3px rgba(0,0,0,0.5);
+}
+
+/* SOFT GOLD GLOW */
+.page-title,
+.payment-title,
+.review-page-title{
+  color:#fff;
+  text-shadow:
+    0 0 6px rgba(212,175,55,0.45),
+    0 0 12px rgba(212,175,55,0.25);
+}
+
+/* RIPPLE EFFECT */
+button,
+.game-btn{
+  position:relative;
+  overflow:hidden;
+}
+
+button::after,
+.game-btn::after{
+  content:"";
+  position:absolute;
+  width:20px;
+  height:20px;
+  background:rgba(212,175,55,0.45);
+  border-radius:50%;
+  transform:scale(0);
+  opacity:0;
+  pointer-events:none;
+}
+
+button:active::after,
+.game-btn:active::after{
+  animation:ripple .6s ease-out;
+}
+
+@keyframes ripple{
+  from{
+    transform:scale(0);
+    opacity:0.9;
+  }
+  to{
+    transform:scale(12);
+    opacity:0;
+  }
+}
+
+button:active,
+.game-btn:active{
+  transform:scale(0.97);
+}
+
+/* SECONDARY GENSHIN BUTTON */
+.secondary-btn{
+  margin-top:14px;
+  background:linear-gradient(135deg,#5e7fa6,#2b4b6f);
+  color:white;
+}
+
+/* REVIEW BUTTON ALIGNMENT FIX */
+.review-buttons{
+  display:flex;
+  justify-content:center;
+  gap:24px;
+  margin-top:20px;
+}

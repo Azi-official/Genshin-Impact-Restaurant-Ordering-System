@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+  <title>Genshin Impact Restaurant</title>
+</head>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Queue Number</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="genshin-bg">
+
+<div class="center-page">
+
+  <h2 style="color:white">Thank you for your order</h2>
+
+  <h1 style="color:white;font-size:64px" id="queueNum"></h1>
+
+  <button class="game-btn" onclick="orderAgain()">Order Again</button>
+
+</div>
+
+<script>
+let num = Math.floor(Math.random()*900)+100;
+document.getElementById("queueNum").innerText = "A-" + num;
+
+function orderAgain(){
+  localStorage.clear();
+  location.href = "welcome.html";
+}
+</script>
+
+<script>
+localStorage.removeItem("cart");
+</script>
+
+</body>
+</html>

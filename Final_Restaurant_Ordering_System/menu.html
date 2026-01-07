@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+  <title>Genshin Impact Restaurant</title>
+</head>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Genshin Impact Kiosk</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="menu-bg"></body>
+
+<div class="kiosk-container">
+  
+  <aside class="category-panel">
+    <h2>Menu</h2>
+    <button onclick="filterItems('all')">All</button>
+    <button onclick="filterItems('meal')">Meals</button>
+    <button onclick="filterItems('drink')">Drinks</button>
+    <button onclick="filterItems('dessert')">Desserts</button>
+  </aside>
+
+  <main class="menu-area">
+
+    <h1 class="menu-title">Teyvat Specialties</h1>
+
+    <div class="menu-grid">
+
+
+      <div class="menu-card meal" data-name="Delicious Golden Shrimp Balls" data-price="180">
+        <img src="images/Delicious Golden Shrimp Balls.jpeg">
+        <h4>Delicious Golden Shrimp Balls</h4>
+        <p class="price">₱180</p>
+        <button onclick="addItem(this)">Add</button>
+      </div>
+
+      <div class="menu-card meal" data-name="Emergency Food – Paimon" data-price="150">
+        <img src="images/emergency food- Paimon.jpeg">
+        <h4>Emergency Food – Paimon</h4>
+        <p class="price">₱150</p>
+        <button onclick="addItem(this)">Add</button>
+      </div>
+
+      <div class="menu-card meal" data-name="Father – Arlecchino" data-price="220">
+        <img src="images/Father- Arlecchino.jpeg">
+        <h4>Father – Arlecchino</h4>
+        <p class="price">₱220</p>
+        <button onclick="addItem(this)">Add</button>
+      </div>
+
+      <div class="menu-card meal" data-name="Jade Parcels" data-price="180">
+        <img src="images/Jade Parcels.jpeg">
+        <h4>Jade Parcels</h4>
+        <p class="price">₱180</p>
+        <button onclick="addItem(this)">Add</button>
+      </div>
+
+      <div class="menu-card meal" data-name="Mondstadt Hash Brown" data-price="120">
+        <img src="images/Mondstadt Hash Brown.jpeg">
+        <h4>Mondstadt Hash Brown</h4>
+        <p class="price">₱120</p>
+        <button onclick="addItem(this)">Add</button>
+      </div>
+
+      <div class="menu-card meal" data-name="Mushroom Pizza" data-price="160">
+        <img src="images/Mushroom Pizza.jpeg">
+        <h4>Mushroom Pizza</h4>
+        <p class="price">₱160</p>
+        <button onclick="addItem(this)">Add</button>
+      </div>
+
+      <div class="menu-card meal" data-name="Sweet Madame" data-price="140">
+        <img src="images/Sweet Madame.jpeg">
+        <h4>Sweet Madame</h4>
+        <p class="price">₱140</p>
+        <button onclick="addItem(this)">Add</button>
+      </div>
+
+      <div class="menu-card meal" data-name="Teyvat Fried Egg" data-price="90">
+        <img src="images/Teyvat Fried Egg.jpeg">
+        <h4>Teyvat Fried Egg</h4>
+        <p class="price">₱90</p>
+        <button onclick="addItem(this)">Add</button>
+      </div>
+
+      <div class="menu-card meal" data-name="Sakura Mochi" data-price="110">
+        <img src="images/Sakura Mochi.jpeg">
+        <h4>Sakura Mochi</h4>
+        <p class="price">₱110</p>
+        <button onclick="addItem(this)">Add</button>
+      </div>
+
+
+      <div class="menu-card drink" data-name="Berry & Mint Burst" data-price="90">
+        <img src="images/Berry & Mint Burst.jpeg">
+        <h4>Berry & Mint Burst</h4>
+        <p class="price">₱90</p>
+        <button onclick="addItem(this)">Add</button>
+      </div>
+
+      <div class="menu-card drink" data-name="Chenyu Brew" data-price="95">
+        <img src="images/Chenyu Brew.jpeg">
+        <h4>Chenyu Brew</h4>
+        <p class="price">₱95</p>
+        <button onclick="addItem(this)">Add</button>
+      </div>
+
+      <div class="menu-card drink" data-name="Iced Grape Tea" data-price="85">
+        <img src="images/Iced Grape Tea.jpeg">
+        <h4>Iced Grape Tea</h4>
+        <p class="price">₱85</p>
+        <button onclick="addItem(this)">Add</button>
+      </div>
+
+      <div class="menu-card drink" data-name="Sanqing Tea" data-price="80">
+        <img src="images/Sanqing Tea.jpeg">
+        <h4>Sanqing Tea</h4>
+        <p class="price">₱80</p>
+        <button onclick="addItem(this)">Add</button>
+      </div>
+
+      <div class="menu-card drink" data-name="The Fourth Movement" data-price="100">
+        <img src="images/The Fourth Movement.jpeg">
+        <h4>The Fourth Movement</h4>
+        <p class="price">₱100</p>
+        <button onclick="addItem(this)">Add</button>
+      </div>
+
+
+      <div class="menu-card dessert" data-name="Almond Tofu" data-price="110">
+        <img src="images/Almond Tofu.jpeg">
+        <h4>Almond Tofu</h4>
+        <p class="price">₱110</p>
+        <button onclick="addItem(this)">Add</button>
+      </div>
+
+      <div class="menu-card dessert" data-name="Fontinalia Mousse" data-price="130">
+        <img src="images/Fontinalia Mousse.jpeg">
+        <h4>Fontinalia Mousse</h4>
+        <p class="price">₱130</p>
+        <button onclick="addItem(this)">Add</button>
+      </div>
+
+      <div class="menu-card dessert" data-name="Pour la Justice" data-price="140">
+        <img src="images/Pour la Justice.jpeg">
+        <h4>Pour la Justice</h4>
+        <p class="price">₱140</p>
+        <button onclick="addItem(this)">Add</button>
+      </div>
+
+      <div class="menu-card dessert" data-name="Tricolor Dango" data-price="100">
+        <img src="images/tricolor dango.jpeg">
+        <h4>Tricolor Dango</h4>
+        <p class="price">₱100</p>
+        <button onclick="addItem(this)">Add</button>
+      </div>
+
+    </div>
+
+  </main>
+
+</div>
+
+<div class="cart-bar">
+  <span id="cart-info">0 items | ₱0</span>
+  <button onclick="checkout()">Checkout</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

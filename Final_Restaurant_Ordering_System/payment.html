@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+  <title>Genshin Impact Restaurant</title>
+</head>
+
+
+<head>
+  <meta charset="UTF-8">
+  <title>Payment</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="payment-bg">
+
+<div class="payment-page">
+
+  <h1 class="payment-title">Select Payment Method</h1>
+
+  <div class="payment-container">
+
+    <div class="payment-box" onclick="processPayment('cash')">
+      <img src="images/cash.png" alt="Cash">
+      <p>Cash</p>
+    </div>
+
+    <div class="payment-box" onclick="processPayment('card')">
+      <img src="images/card.png" alt="Card">
+      <p>Card</p>
+    </div>
+
+    <div class="payment-box" onclick="processPayment('gcash')">
+      <img src="images/gcash.png" alt="GCash">
+      <p>GCash QR</p>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+function processPayment(method){
+  if(method === 'cash'){
+    location.href = "queue.html";
+  }else{
+    location.href = "processing.html";
+  }
+}
+</script>
+
+</body>
+</html>

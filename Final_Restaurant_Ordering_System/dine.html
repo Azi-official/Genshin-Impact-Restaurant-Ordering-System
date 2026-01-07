@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+  <title>Genshin Impact Restaurant</title>
+</head>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dine Option</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="genshin-bg">
+
+
+<div class="center-page">
+
+  <h1 class="page-title">Choose Dining Option</h1>
+
+  <div class="option-container">
+
+    <div class="option-box" onclick="goNext()">
+      <img src="images/dinein.png">
+      <p>Dine In</p>
+    </div>
+
+    <div class="option-box" onclick="goNext()">
+      <img src="images/takeout.jpg">
+      <p>Take Out</p>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+function goNext(){
+  location.href = "payment.html";
+}
+</script>
+
+</body>
+</html>
